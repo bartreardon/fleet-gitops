@@ -5,4 +5,4 @@
   resolution: Change the DNS resolver to Cloudflare at 1.1.1.1
   platform: darwin
   run_script:
-    path: ../lib/macos/scripts/set-dns-cloudflare.sh
+    path: ../scripts/set-dns-cloudflare.sh
