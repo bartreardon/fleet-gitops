@@ -25,6 +25,10 @@ controls:
   ipados_updates:
     deadline: "2025-09-30"
     minimum_version: "18.5"
+  macos_settings:
+    custom_settings:
+      - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+      - path: ../lib/macos/configuration-profiles/passcode-settings-ddm.json
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
@@ -32,7 +36,3 @@ team_settings:
     enable_host_users: true
     enable_software_inventory: true
 software:
-macos_settings:
-  custom_settings:
-    - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
-    - path: ../lib/macos/configuration-profiles/passcode-settings-ddm.json
