@@ -1,0 +1,27 @@
+##############################################################################################
+#   ██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗    ██╗███╗   ██╗███████╗██████╗ ███████╗
+#  ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔═══██╗██║    ██║████╗  ██║██╔════╝██╔══██╗██╔════╝
+#  ██║     ██║   ██║██║  ██║█████╗  ██║   ██║██║ █╗ ██║██╔██╗ ██║█████╗  ██████╔╝███████╗
+#  ██║     ██║   ██║██║  ██║██╔══╝  ██║   ██║██║███╗██║██║╚██╗██║██╔══╝  ██╔══██╗╚════██║
+#  ╚██████╗╚██████╔╝██████╔╝███████╗╚██████╔╝╚███╔███╔╝██║ ╚████║███████╗██║  ██║███████║
+#   ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚══════╝
+##############################################################################################
+# ⛔ This file indicates REQUIRED reviewers for changes in this repo.
+#
+# For more information on how this works, see:
+# - What is a DRI and how is this configured? https://fleetdm.com/handbook/company/why-this-way#why-direct-responsibility
+# - Historical context: https://github.com/fleetdm/fleet/pull/12786
+##############################################################################################
+
+# Best practice file structure
+/lib @harrisonravazzolo
+/teams @harrisonravazzolo
+default.yml @harrisonravazzolo
+
+# GitHub Action and GitLab CI/CD
+.github @getvictor
+.gitlab-ci.yml @getvictor
+gitops.sh @getvictor
+
+# Everything else
+* @getvictor
