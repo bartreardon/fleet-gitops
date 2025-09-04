@@ -11,6 +11,7 @@ name: Engineering
 policies:
   - path: ../lib/macos/policies/macos-device-health.policies.yml
   - path: ../lib/linux/policies/linux-device-health.policies.yml
+  - path: ../lib/windows/policies/all-windows-updates-installed.policies.yml
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
   - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
@@ -35,4 +36,11 @@ team_settings:
   features:
     enable_host_users: true
     enable_software_inventory: true
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/your-webhook-url
+      host_batch_size: 0
+      policy_ids:
+        - 13
 software:
